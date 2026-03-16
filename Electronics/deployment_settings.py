@@ -26,7 +26,12 @@ CORS_ALLOWED_ORIGINS = [
     'https://frontendblog-s2uj.onrender.com'
     
 ]
-CORS_ALLOWED_ORIGINS =True
+CORS_ALLOWED_ALL_ORIGINS =False
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://frontendblog-s2uj.onrender.com",
+]
+
 STORAGES ={
     "default":{
         "BACKEND" : "django.core.files.storage.FileSystemStorage",
